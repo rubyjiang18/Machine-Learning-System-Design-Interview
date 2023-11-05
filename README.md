@@ -7,5 +7,10 @@ Another good MLSD resources can be found in this [repo](https://github.com/alire
 TODO
 
 ## Chapter 2: Visual Search System
-- [ ] [Visual search at pinterest](https://arxiv.org/pdf/1505.07647.pdf)
-- [ ] [Visual embedding for search at Pinterest]()
+- [x] [Visual search at pinterest](https://arxiv.org/pdf/1505.07647.pdf)
+- [x] [Unifying visual embeddings for search at Pinterest](https://medium.com/pinterest-engineering/unifying-visual-embeddings-for-visual-search-at-pinterest-74ea7ea103f0)
+- [x] [Representation learning](https://en.wikipedia.org/wiki/Feature_learning)
+- [x] [ResNet paper](https://arxiv.org/abs/1512.03385)
+- [x] [Transformer paper - Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+- [ ] [Vision transformer paper](https://arxiv.org/abs/2010.11929)
+- [ ] [SimCLR - A Simple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/abs/2002.05709)
