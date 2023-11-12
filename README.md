@@ -12,5 +12,28 @@ TODO
 - [x] [Representation learning](https://en.wikipedia.org/wiki/Feature_learning)
 - [x] [ResNet paper](https://arxiv.org/abs/1512.03385)
 - [x] [Transformer paper - Attention Is All You Need](https://arxiv.org/abs/1706.03762)
-- [ ] [Vision transformer paper](https://arxiv.org/abs/2010.11929)
+- [x] [Vision transformer paper](https://arxiv.org/abs/2010.11929)
 - [ ] [SimCLR - A Simple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/abs/2002.05709)
+- [ ] [MoCo paper](https://arxiv.org/pdf/1911.05722.pdf) 
+- [ ] [Constractive Representation Learning Methods](https://lilianweng.github.io/posts/2019-11-10-self-supervised/)
+- [ ] [Dot product]
+- [ ] [Cosine similarity]
+- [ ] [Euclidean distance][]
+- [ ] [Curse of dimensionality]
+- [ ] [Curse of dimensionality issue in ML]
+- [ ] [Cross-entropy loss]
+- [ ] [Vector quantization]
+- [ ] [Product quantization]
+- [ ] [R-Trees]
+- [ ] [KD-Trees]
+- [ ] [Annoy]
+- [ ] [Locality-sensitive hashing]
+- [ ] [Fais library]
+- [ ] [ScaNN library]
+- [ ] [Cotent moderation with ML]
+- [ ] [Bias in AI and recommendation systems]
+- [ ] [Positional bias]
+- [ ] [Smart crop]
+- [ ] [Better search with gnns]
+- [ ] [Active learning]
+- [ ] [Human-in-the-loop ML]
