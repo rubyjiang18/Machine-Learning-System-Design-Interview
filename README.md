@@ -19,8 +19,8 @@ TODO
 - [x] [Dot product](https://en.wikipedia.org/wiki/Dot_product)
 - [x] [Cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
 - [x] [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance)
-- [ ] [Curse of dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality)
-- [ ] [Curse of dimensionality issue in ML]
+- [x] [Curse of dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality)
+- [x] [Curse of dimensionality issue in ML](https://www.mygreatlearning.com/blog/understanding-curse-of-dimensionality/)
 - [ ] [Cross-entropy loss]
 - [ ] [Vector quantization]
 - [ ] [Product quantization]
