@@ -18,7 +18,7 @@ TODO
 - [x] [Constractive Representation Learning Methods](https://lilianweng.github.io/posts/2019-11-10-self-supervised/)
 - [x] [Dot product](https://en.wikipedia.org/wiki/Dot_product)
 - [x] [Cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
-- [x] [Euclidean distance][]
+- [x] [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance)
 - [ ] [Curse of dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality)
 - [ ] [Curse of dimensionality issue in ML]
 - [ ] [Cross-entropy loss]
