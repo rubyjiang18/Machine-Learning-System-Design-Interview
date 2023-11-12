@@ -13,13 +13,13 @@ TODO
 - [x] [ResNet paper](https://arxiv.org/abs/1512.03385)
 - [x] [Transformer paper - Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 - [x] [Vision transformer paper](https://arxiv.org/abs/2010.11929)
-- [ ] [SimCLR - A Simple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/abs/2002.05709)
+- [x] [SimCLR - A Simple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/abs/2002.05709)
 - [ ] [MoCo paper](https://arxiv.org/pdf/1911.05722.pdf) 
-- [ ] [Constractive Representation Learning Methods](https://lilianweng.github.io/posts/2019-11-10-self-supervised/)
-- [ ] [Dot product]
-- [ ] [Cosine similarity]
-- [ ] [Euclidean distance][]
-- [ ] [Curse of dimensionality]
+- [x] [Constractive Representation Learning Methods](https://lilianweng.github.io/posts/2019-11-10-self-supervised/)
+- [x] [Dot product](https://en.wikipedia.org/wiki/Dot_product)
+- [x] [Cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
+- [x] [Euclidean distance][]
+- [ ] [Curse of dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality)
 - [ ] [Curse of dimensionality issue in ML]
 - [ ] [Cross-entropy loss]
 - [ ] [Vector quantization]
