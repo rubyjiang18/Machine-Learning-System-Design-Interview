@@ -21,16 +21,16 @@ TODO
 - [x] [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance)
 - [x] [Curse of dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality)
 - [x] [Curse of dimensionality issue in ML](https://www.mygreatlearning.com/blog/understanding-curse-of-dimensionality/)
-- [ ] [Cross-entropy loss]
-- [ ] [Vector quantization]
-- [ ] [Product quantization]
-- [ ] [R-Trees]
-- [ ] [KD-Trees]
-- [ ] [Annoy]
-- [ ] [Locality-sensitive hashing]
-- [ ] [Fais library]
-- [ ] [ScaNN library]
-- [ ] [Cotent moderation with ML]
+- [x] [Cross-entropy loss](https://en.wikipedia.org/wiki/Cross-entropy)
+- [ ] [Vector quantization](http://www.ws.binghamton.edu/fowler/fowler%20personal%20page/EE523_files/Ch_10_1%20VQ%20Description%20(PPT).pdf)
+- [ ] [Product quantization](https://towardsdatascience.com/product-quantization-for-similarity-search-2f1f67c5fddd)
+- [ ] [R-Trees](https://en.wikipedia.org/wiki/R-tree)
+- [x] [KD-Trees](https://kanoki.org/2020/08/05/find-nearest-neighbor-using-kd-tree/)
+- [ ] [Annoy](https://towardsdatascience.com/comprehensive-guide-to-approximate-nearest-neighbors-algorithms-8b94f057d6b6)
+- [ ] [Locality-sensitive hashing](http://web.stanford.edu/class/cs246/slides/03-lsh.pdf)
+- [ ] [Fais library](https://github.com/facebookresearch/faiss)
+- [ ] [ScaNN library](https://github.com/google-research/google-research/tree/master/scann)
+- [ ] [Cotent moderation with ML](https://appen.com/blog/content-moderation/)
 - [ ] [Bias in AI and recommendation systems]
 - [ ] [Positional bias]
 - [ ] [Smart crop]
