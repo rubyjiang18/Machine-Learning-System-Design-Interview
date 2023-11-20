@@ -34,6 +34,6 @@ TODO
 - [x] [Bias in AI and recommendation systems](https://www.searchenginejournal.com/biases-search-recommender-systems/339319/#close)
 - [x] [Positional bias](https://eugeneyan.com/writing/position-bias/)
 - [x] [Smart crop](https://blog.twitter.com/engineering/en_us/topics/infrastructure/2018/Smart-Auto-Cropping-of-Images)
-- [ ] [Better search with gnns]
-- [ ] [Active learning]
-- [ ] [Human-in-the-loop ML]
+- [ ] [Better search with gnns](https://arxiv.org/pdf/2010.01666.pdf)
+- [x] [Active learning](https://en.wikipedia.org/wiki/Active_learning_(machine_learning))
+- [ ] [Human-in-the-loop ML](https://arxiv.org/pdf/2108.00941.pdf)
