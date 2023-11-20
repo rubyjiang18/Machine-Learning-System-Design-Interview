@@ -30,10 +30,10 @@ TODO
 - [ ] [Locality-sensitive hashing](http://web.stanford.edu/class/cs246/slides/03-lsh.pdf)
 - [ ] [Fais library](https://github.com/facebookresearch/faiss)
 - [ ] [ScaNN library](https://github.com/google-research/google-research/tree/master/scann)
-- [ ] [Cotent moderation with ML](https://appen.com/blog/content-moderation/)
-- [ ] [Bias in AI and recommendation systems]
-- [ ] [Positional bias]
-- [ ] [Smart crop]
+- [x] [Cotent moderation with ML](https://appen.com/blog/content-moderation/)
+- [x] [Bias in AI and recommendation systems](https://www.searchenginejournal.com/biases-search-recommender-systems/339319/#close)
+- [x] [Positional bias](https://eugeneyan.com/writing/position-bias/)
+- [x] [Smart crop](https://blog.twitter.com/engineering/en_us/topics/infrastructure/2018/Smart-Auto-Cropping-of-Images)
 - [ ] [Better search with gnns]
 - [ ] [Active learning]
 - [ ] [Human-in-the-loop ML]
