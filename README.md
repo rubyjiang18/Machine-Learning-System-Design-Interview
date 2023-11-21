@@ -37,3 +37,19 @@ TODO
 - [ ] [Better search with gnns](https://arxiv.org/pdf/2010.01666.pdf)
 - [x] [Active learning](https://en.wikipedia.org/wiki/Active_learning_(machine_learning))
 - [ ] [Human-in-the-loop ML](https://arxiv.org/pdf/2108.00941.pdf)
+
+## Chapter 3: Google Stree View Blurring System
+- [x] [Google Street View](https://www.google.com/streetview/)
+- [x] [DETR](https://github.com/facebookresearch/detr)
+- [x] [RCNN family](https://lilianweng.github.io/posts/2017-12-31-object-recognition-part-3/)
+- [x] [Fast RCNN](https://arxiv.org/abs/1504.08083)
+- [x] [Faster RCNN](https://arxiv.org/abs/1506.01497)
+- [ ] [YOLO family](https://pyimagesearch.com/2022/04/04/introduction-to-the-yolo-family/)
+- [ ] [SSD](https://jonathan-hui.medium.com/ssd-object-detection-single-shot-multibox-detector-for-real-time-processing-9bd8deac0e06)
+- [x] [Data augmentation techiniques](https://www.kaggle.com/discussions/getting-started/190280)
+- [x] [CNN](https://en.wikipedia.org/wiki/Convolutional_neural_network)
+- [ ] [Object detection details](https://dudeperf3ct.github.io/object/detection/2019/01/07/Mystery-of-Object-Detection/)
+- [ ] [Forward pass and backward pass - Andrew Ng Youtube Video](https://www.youtube.com/watch?v=qzPQ8cEsVK8)
+- [x] [MSE](https://en.wikipedia.org/wiki/Mean_squared_error)
+- [x] [Log loss/cross entropy loss](https://en.wikipedia.org/wiki/Cross-entropy)
+- [ ] [Pascal VOC]
