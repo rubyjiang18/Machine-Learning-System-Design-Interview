@@ -52,4 +52,17 @@ TODO
 - [ ] [Forward pass and backward pass - Andrew Ng Youtube Video](https://www.youtube.com/watch?v=qzPQ8cEsVK8)
 - [x] [MSE](https://en.wikipedia.org/wiki/Mean_squared_error)
 - [x] [Log loss/cross entropy loss](https://en.wikipedia.org/wiki/Cross-entropy)
-- [ ] [Pascal VOC]
+- [x] [Pascal VOC](http://host.robots.ox.ac.uk/pascal/VOC/voc2008/index.html)
+- [ ] [Coco dataset evaluation]()
+- [ ] [Object detection evaluation]
+- [ ] [NMS]
+- [ ] [Python implementation of NMS]
+- [ ] [Recent object detection models]
+- [ ] [Distributed training in TensorFlow]
+- [ ] [Distributed training in Pytorch]
+- [ ] [GDPR and ML]
+- [ ] [Bias and fairness in face detectin]
+- [ ] [AI fairness]
+- [ ] [Continue learing]
+- [ ] [Active learning]
+- [ ] [Human-in-the-loop ML]
