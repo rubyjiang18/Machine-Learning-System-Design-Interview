@@ -53,16 +53,16 @@ TODO
 - [x] [MSE](https://en.wikipedia.org/wiki/Mean_squared_error)
 - [x] [Log loss/cross entropy loss](https://en.wikipedia.org/wiki/Cross-entropy)
 - [x] [Pascal VOC](http://host.robots.ox.ac.uk/pascal/VOC/voc2008/index.html)
-- [ ] [Coco dataset evaluation]()
-- [ ] [Object detection evaluation]
-- [ ] [NMS]
-- [ ] [Python implementation of NMS]
-- [ ] [Recent object detection models]
-- [ ] [Distributed training in TensorFlow]
-- [ ] [Distributed training in Pytorch]
-- [ ] [GDPR and ML]
-- [ ] [Bias and fairness in face detectin]
-- [ ] [AI fairness]
-- [ ] [Continue learing]
-- [ ] [Active learning]
-- [ ] [Human-in-the-loop ML]
+- [x] [Coco dataset evaluation](https://cocodataset.org/#detection-eval)
+- [ ] [Object detection evaluation](https://github.com/rafaelpadilla/Object-Detection-Metrics)
+- [ ] [Non-maximum suppression (NMS)](https://en.wikipedia.org/wiki/NMS)
+- [ ] [Python implementation of NMS](https://learnopencv.com/non-maximum-suppression-theory-and-implementation-in-pytorch/)
+- [ ] [Recent object detection models](https://viso.ai/deep-learning/object-detection/)
+- [ ] [Distributed training in TensorFlow](https://www.tensorflow.org/guide/distributed_training)
+- [ ] [Distributed training in Pytorch](https://pytorch.org/tutorials/beginner/dist_overview.html)
+- [ ] [GDPR and ML](https://www.oreilly.com/radar/how-will-the-gdpr-impact-machine-learning/)
+- [ ] [Bias and fairness in face detectin](http://sibgrapi.sid.inpe.br/col/sid.inpe.br/sibgrapi/2021/09.04.19.00/doc/103.pdf)
+- [x] [AI fairness](https://www.kaggle.com/code/alexisbcook/ai-fairness)
+- [x] [Continue learing](https://towardsdatascience.com/how-to-apply-continual-learning-to-your-machine-learning-models-4754adcd7f7f)
+- [x] [Active learning](https://en.wikipedia.org/wiki/Active_learning_(machine_learning))
+- [x] [Human-in-the-loop ML](https://arxiv.org/pdf/2108.00941.pdf)
