@@ -67,10 +67,10 @@ TODO
 - [x] [Active learning](https://en.wikipedia.org/wiki/Active_learning_(machine_learning))
 - [x] [Human-in-the-loop ML](https://arxiv.org/pdf/2108.00941.pdf)
 
-## Chapter 2: Youtube Video Search
+## Chapter 4: Youtube Video Search
 - [ ] [Elasticsearch](https://www.tutorialspoint.com/elasticsearch/elasticsearch_query_dsl.htm)
 - [x] [Preprocessing text data](https://huggingface.co/docs/transformers/preprocessing)
-- [z] [NFKD normalization](http://unicode.org/reports/tr15/)
+- [x] [NFKD normalization](http://unicode.org/reports/tr15/)
 - [x] [What is Tokenization summary](https://huggingface.co/docs/transformers/tokenizer_summary)
 - [x] [Hash collision](https://en.wikipedia.org/wiki/Hash_collision)
 - [ ] [Deep Learning for NLP](http://cs224d.stanford.edu/lecture_notes/notes1.pdf)
