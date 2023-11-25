@@ -95,13 +95,13 @@ TODO
 - [ ] [Semantic product search in E-Commerce](https://arxiv.org/abs/2008.08180)
 
 ## Chapter 5: Harmful Content Detection
-- [ ] [Facebook's inauthentic behavior]()
-- [ ] [LinkedIn's professional community policies]()
-- [ ] [Twitter's civic integrity policy]()
-- [ ] [Facebooks integrity survey]()
+- [x] [Facebook's inauthentic behavior](https://transparency.fb.com/policies/community-standards/inauthentic-behavior/)
+- [x] [LinkedIn's professional community policies](https://www.linkedin.com/legal/professional-community-policies)
+- [x] [Twitter's civic integrity policy](https://help.twitter.com/en/rules-and-policies/election-integrity-policy)
+- [ ] [Facebooks integrity survey](https://arxiv.org/abs/2009.10311)
 - [ ] [Pinterest's violation detection system]()
 - [ ] [Abusive deteciton at LinkedIn]()
-- [ ] [WPIE method]()
+- [ ] [WPIE method](https://ai.meta.com/blog/community-standards-report/)
 - [ ] [BERT paper]()
 - [ ] [Multilingual DistilBert]()
 - [ ] [Multilingual language models]()
