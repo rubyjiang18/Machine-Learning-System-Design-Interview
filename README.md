@@ -5,6 +5,10 @@ Another good MLSD resources can be found in this [repo](https://github.com/alire
 
 ## Chapter 1: Introduction and Overview
 TODO
+- [x] [Data warehouse](https://cloud.google.com/learn/what-is-a-data-warehouse)
+- [] []()
+- [] []()
+- [] []()
 
 ## Chapter 2: Visual Search System
 - [x] [Visual search at pinterest](https://arxiv.org/pdf/1505.07647.pdf)
@@ -98,9 +102,9 @@ TODO
 - [x] [Facebook's inauthentic behavior](https://transparency.fb.com/policies/community-standards/inauthentic-behavior/)
 - [x] [LinkedIn's professional community policies](https://www.linkedin.com/legal/professional-community-policies)
 - [x] [Twitter's civic integrity policy](https://help.twitter.com/en/rules-and-policies/election-integrity-policy)
-- [ ] [Facebooks integrity survey](https://arxiv.org/abs/2009.10311)
-- [ ] [Pinterest's violation detection system]()
-- [ ] [Abusive deteciton at LinkedIn]()
+- [x] [Facebooks integrity survey](https://arxiv.org/abs/2009.10311)
+- [x] [Pinterest's violation detection system](https://medium.com/pinterest-engineering/how-pinterest-fights-misinformation-hate-speech-and-self-harm-content-with-machine-learning-1806b73b40ef)
+- [x] [Abusive deteciton at LinkedIn-isolation forests](https://engineering.linkedin.com/blog/2019/isolation-forest)
 - [ ] [WPIE method](https://ai.meta.com/blog/community-standards-report/)
 - [ ] [BERT paper]()
 - [ ] [Multilingual DistilBert]()
