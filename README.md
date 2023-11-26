@@ -105,7 +105,7 @@ TODO
 - [x] [Facebooks integrity survey](https://arxiv.org/abs/2009.10311)
 - [x] [Pinterest's violation detection system](https://medium.com/pinterest-engineering/how-pinterest-fights-misinformation-hate-speech-and-self-harm-content-with-machine-learning-1806b73b40ef)
 - [x] [Abusive deteciton at LinkedIn-isolation forests](https://engineering.linkedin.com/blog/2019/isolation-forest)
-- [ ] [WPIE method](https://ai.meta.com/blog/community-standards-report/)
+- [x] [WPIE method](https://ai.meta.com/blog/community-standards-report/)
 - [ ] [BERT paper]()
 - [ ] [Multilingual DistilBert]()
 - [ ] [Multilingual language models]()
