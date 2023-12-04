@@ -110,7 +110,7 @@ TODO
 - [x] [Multilingual DistilBert](https://huggingface.co/distilbert-base-multilingual-cased)
 - [ ] [Multilingual language models](https://arxiv.org/abs/2107.00676)
 - [ ] [CLIP model](https://openai.com/research/clip)
-- [ ] [SimCLR paper](https://arxiv.org/abs/2002.05709)
+- [x] [SimCLR paper](https://arxiv.org/abs/2002.05709)
 - [ ] [VideoMoCo paper](https://arxiv.org/abs/2103.05905)
 - [x] [Hyperparameter tunning](https://cloud.google.com/ai-platform/training/docs/hyperparameter-tuning-overview)
 - [x] [Overfitting](https://en.wikipedia.org/wiki/Overfitting)
@@ -127,3 +127,25 @@ TODO
 - [ ] [Efficient harmful content detection](https://about.fb.com/news/2021/12/metas-new-ai-system-tackles-harmful-content/)
 - [ ] [Linear Transformer paper](https://arxiv.org/abs/2006.16236)
 - [ ] [Efficient AI models to detect hate speech](https://ai.meta.com/blog/how-facebook-uses-super-efficient-ai-models-to-detect-hate-speech/)
+
+## Chapter 6: Video Recommendation System
+- [] [Youtube recommendation system]()
+- [] [DNN for Youtube recommendation]()
+- [] [CBOW]()
+- [] [BERT paper]()
+- [] [Matrix factorization]()
+- [] [Stochastic gradient descent]()
+- [] [WALS optimization]()
+- [] [Instagram multi-stage recommendation system]()
+- [] [Exploration and exploitation trade-off]()
+- [] [Bias in AI and recommendation systems]()
+- [] [Ethical concerns in recommendation systems]()
+- [] [Seasonality in recommendation systems]()
+- [] [A multitask ranking system]()
+- [] [Benefit from a negative feedback]()
+
+## Chapter 7: Event Recommendation System
+- [] []()
+## Chapter 8: Ad Click Prediction on Social Platforms
+## Chapter 7: Personalized News Feed
+## Chapter 7: People You May Know
