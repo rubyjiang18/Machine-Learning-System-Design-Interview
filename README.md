@@ -129,11 +129,11 @@ TODO
 - [ ] [Efficient AI models to detect hate speech](https://ai.meta.com/blog/how-facebook-uses-super-efficient-ai-models-to-detect-hate-speech/)
 
 ## Chapter 6: Video Recommendation System
-- [] [Youtube recommendation system]()
+- [] [Youtube recommendation system](https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/)
 - [] [DNN for Youtube recommendation]()
 - [] [CBOW]()
 - [] [BERT paper]()
-- [] [Matrix factorization]()
+- [x] [Matrix factorization](https://developers.google.com/machine-learning/recommendation/collaborative/matrix)
 - [] [Stochastic gradient descent]()
 - [] [WALS optimization]()
 - [] [Instagram multi-stage recommendation system]()
