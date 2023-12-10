@@ -147,5 +147,17 @@ TODO
 ## Chapter 7: Event Recommendation System
 - [] []()
 ## Chapter 8: Ad Click Prediction on Social Platforms
-## Chapter 7: Personalized News Feed
-## Chapter 7: People You May Know
+## Chapter 9: Similar Listings on Vacation Rental Platforms
+## Chapter 10: Personalized News Feed
+
+## Chapter 11: People You May Know
+- [x] [Clustering in ML](https://developers.google.com/machine-learning/clustering/overview)
+- [] [PYMK on Facebook]()
+- [] [Graph convolutional neural netwoeks]()
+- [] [GraphSage paper]()
+- [] [Graph attention networks]()
+- [] [Graph isomorphism network]()
+- [] [Graph neural networks]()
+- [] [Personalized random walk]()
+- [] [LinkedIn's PYMK system]()
+- [] [Addressing delayed feedback]()
