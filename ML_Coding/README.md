@@ -2,17 +2,17 @@
 This is primarily from [repo](https://github.com/alirezadir/Machine-Learning-Interviews).
 
 ### ML Algorithm
-- Linear regression
-- Logistic regression
-- K-means clustering
-- K-nearest neighbors
-- Decision tree
-- Linear SVM
+- [ ] Linear regression
+- [ ] Logistic regression
+- [x] K-means clustering
+- [ ] K-nearest neighbors
+- [ ] Decision tree
+- [ ] Linear SVM
 - Neural Networks
-    - Perceptron
-    - FeedForward NN
-    - Softmax
-    - Convolution
+    - [ ] Perceptron
+    - [ ] FeedForward NN
+    - [ ] Softmax
+    - [ ] Convolution
 
 ### Sampling
 - Stratified sampling
