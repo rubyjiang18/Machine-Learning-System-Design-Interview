@@ -8,7 +8,7 @@ This is primarily from [repo](https://github.com/alirezadir/Machine-Learning-Int
 - [ ] K-nearest neighbors
 - [ ] Decision tree
 - [ ] Linear SVM
-- Neural Networks
+- [ ] Neural Networks
     - [ ] Perceptron
     - [ ] FeedForward NN
     - [ ] Softmax
