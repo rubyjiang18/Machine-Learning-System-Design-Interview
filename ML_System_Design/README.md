@@ -51,7 +51,7 @@ TODO
 - [ ] [Multi-armed bandit]()
 - [ ] [ML infrastructure]()
 - [ ] [Interpretability in ML]()
-- [x] [Chip Huyen. Designing Machine Learning Systems: An Iterative Process for Production-Ready Application. O'Reilly Media, Inc., 2022]
+- [x] Chip Huyen. Designing Machine Learning Systems: An Iterative Process for Production-Ready Application. O'Reilly Media, Inc., 2022
 
 ## Chapter 2: Visual Search System
 - [x] [Visual search at pinterest](https://arxiv.org/pdf/1505.07647.pdf)
