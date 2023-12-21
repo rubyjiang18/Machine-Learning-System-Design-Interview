@@ -4,7 +4,6 @@ Welcome to the [Machine Learning System Design Interview](https://www.amazon.com
 Another good MLSD resources can be found in this [repo](https://github.com/alirezadir/Machine-Learning-Interviews). Be sure to check it out.
 
 ## Chapter 1: Introduction and Overview
-TODO
 - [x] [Data warehouse](https://cloud.google.com/learn/what-is-a-data-warehouse)
 - [ ] [Structure vs. unstructured data]()
 - [ ] [Bagging technique in ensemble learning]()
