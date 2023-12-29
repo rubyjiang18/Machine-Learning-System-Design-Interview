@@ -2,7 +2,7 @@
 This is primarily from [repo](https://github.com/alirezadir/Machine-Learning-Interviews).
 
 ### ML Algorithm
-- [ ] Linear regression
+- [x] Linear regression
 - [ ] Logistic regression
 - [x] K-means clustering
 - [ ] K-nearest neighbors
