@@ -3,7 +3,7 @@ This is primarily from [repo](https://github.com/alirezadir/Machine-Learning-Int
 
 ### ML Algorithm
 - [x] Linear regression
-- [ ] Logistic regression
+- [x] Logistic regression
 - [x] K-means clustering
 - [ ] K-nearest neighbors
 - [ ] Decision tree
