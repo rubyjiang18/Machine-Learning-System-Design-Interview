@@ -178,7 +178,7 @@ Another good MLSD resources can be found in this [repo](https://github.com/alire
 - [x] [Matrix factorization](https://developers.google.com/machine-learning/recommendation/collaborative/matrix)
 - [x] [Stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent)
 - [x] [WALS optimization](https://fairyonice.github.io/Learn-about-collaborative-filtering-and-weighted-alternating-least-square-with-tensorflow.html)
-- [ ] [Instagram multi-stage recommendation system](https://instagram-engineering.com/powered-by-ai-instagrams-explore-recommender-system-7ca901d2a882)
+- [x] [**Instagram multi-stage recommendation system**](https://instagram-engineering.com/powered-by-ai-instagrams-explore-recommender-system-7ca901d2a882)
 - [x] [Exploration and exploitation trade-off](https://en.wikipedia.org/wiki/Multi-armed_bandit)
 - [x] [Bias in AI and recommendation systems](https://www.searchenginejournal.com/biases-search-recommender-systems/339319/)
 - [ ] [Ethical concerns in recommendation systems](https://link.springer.com/article/10.1007/s00146-020-00950-y)
