@@ -72,6 +72,17 @@ This metric first computes the AP for each output list, and then averages AP val
 AP = \frac{\sum^{k}_{i=1} \text{Precision@i if i'th item is relevant to the user}}{\text{total num of relevant items}}
 ```
 
+Overall ranking quality of the list is considered. However, it is designed for **binary relevance**. For continuous relevance score, nDCG is better.
+
+- nDCG
+
+This metric measures the ranking quality of an output list compared tothe ideal ranking.
+
+DCG calcuates the cumulative gain of items in a list by summing up the relevance score of each item. Then the score is accumulated from the top of the output list to the bottom, with the score of each result discounted at lower ranks.
+```math
+DCG_p = \sum_{i=1}^{p} \frac{rel_i}{\log2(i+1)}
+```
+
 
 
 ### Reference
