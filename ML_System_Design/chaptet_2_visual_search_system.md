@@ -1,5 +1,13 @@
 ## Chapter 2: Visual Search System
 
+### 0. Clarifying requirements
+- A visual search system that retrieves images similar to the user query image, rank them based on similarity to the query image. 
+- The platform only supports images, no video, no text queries allowed. 
+- For simplicity, no personalization.
+
+### 1. Frame as an ML task
+
+
 - [x] [Visual search at pinterest](https://arxiv.org/pdf/1505.07647.pdf)
 - [x] [Unifying visual embeddings for search at Pinterest](https://medium.com/pinterest-engineering/unifying-visual-embeddings-for-visual-search-at-pinterest-74ea7ea103f0)
 - [x] [Representation learning](https://en.wikipedia.org/wiki/Feature_learning)
