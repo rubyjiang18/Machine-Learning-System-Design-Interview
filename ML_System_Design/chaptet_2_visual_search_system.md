@@ -11,9 +11,25 @@
 - Choose the right ML category: ranking problem and representation learning
 
 ### 2. Data Preparation
+2.1 Data Engineering
 - **Images**: ID, Owner ID, Uoload time, Manual tags
 - **Users**: ID, Username, Age, Gender, City, Country, Email
-- **User-image interaction**
+- **User-image interaction**: Impression, Click (Collect, share, like... if allowed)
+    UserID, Query Image ID, Display Image ID, Position in the displayed list, Interaction Type, Location, Timestamp
+
+2.2 Feature Engineering
+For images, resize, scale, normalization, consistent color mode...
+
+### 3. Model Development
+3.1 Model selection: CNN and transformered based
+3.2 Model training: constrastive learning that train the model to distinguish similar and dissimilar images.
+3.3 Construct training dataset
+To label positive images:
+- Use human judgement
+- Use user interaction (clicks) as a proxy for similarity
+- Artificially create a similar image from the query image, known as self-supervision
+
+
 
 - [x] [Visual search at pinterest](https://arxiv.org/pdf/1505.07647.pdf)
 - [x] [Unifying visual embeddings for search at Pinterest](https://medium.com/pinterest-engineering/unifying-visual-embeddings-for-visual-search-at-pinterest-74ea7ea103f0)
