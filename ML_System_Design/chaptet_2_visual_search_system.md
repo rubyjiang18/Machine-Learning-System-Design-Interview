@@ -21,7 +21,7 @@
 For images, resize, scale, normalization, consistent color mode...
 
 ### 3. Model Development
-3.1 Model selection: CNN and transformered based
+3.1 Model selection: CNN and transformer based
 
 3.2 Model training: constrastive learning that train the model to distinguish similar and dissimilar images.
 
@@ -35,7 +35,7 @@ To label positive images:
 Constrastive loss
 - Compute **similarity** between the query image and the embeddings of other images
 - Apply **softmax** to the computed distances => values sum up to 1
-\[ P(y=i|x) = \frac{e^{x_i}}{\sum_{j=1}^{K} e^{x_j}} \]
+$ P(y=i|x) = \frac{e^{x_i}}{\sum_{j=1}^{K} e^{x_j}} $ 
 - **Cross entropy** to measure how close the pred prob are to the ground truth
 
 
