@@ -6,7 +6,14 @@
 - For simplicity, no personalization.
 
 ### 1. Frame as an ML task
+- Define the ML objective: accurately retrieve images that are visually similar to the user query image.
+- Specify system's input and output
+- Choose the right ML category: ranking problem and representation learning
 
+### 2. Data Preparation
+- **Images**: ID, Owner ID, Uoload time, Manual tags
+- **Users**: ID, Username, Age, Gender, City, Country, Email
+- **User-image interaction**
 
 - [x] [Visual search at pinterest](https://arxiv.org/pdf/1505.07647.pdf)
 - [x] [Unifying visual embeddings for search at Pinterest](https://medium.com/pinterest-engineering/unifying-visual-embeddings-for-visual-search-at-pinterest-74ea7ea103f0)
