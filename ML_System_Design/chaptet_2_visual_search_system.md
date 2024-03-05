@@ -54,14 +54,14 @@ MRR = \frac{1}{m}\sum_{i=1}^{m}\frac{1}{ranki}
 - Recall@K
 
 ```math
-recall@K = \frac{# of relevant items among the top k items in the output list}{total # of relevant items in the entire dataset}
+recall@K = \frac{num of relevant items among the top k items in the output list}{total num of relevant items in the entire dataset}
 ```
 
 Recall@K is not helpful when denominator is very high, where our goal is to retrieve a handful of the most similar images. It does measure the ranking quality of the model. Do not use.
 - Precision@K
 
 ```math
-Precision@K = \frac{# of relevant items among the top k items in the output list}{k}
+Precision@K = \frac{num of relevant items among the top k items in the output list}{k}
 ```
 
 This metric measures how precise the output lists are, but it does not consider the ranking quality. Do not use.
@@ -69,7 +69,7 @@ This metric measures how precise the output lists are, but it does not consider 
 
 This metric first computes the AP for each output list, and then averages AP values.
 ```math
-AP = \frac{\sum_{i=1}^k Precision@i if i'th item is relevant to the user}{total # of relevant items}
+AP = \frac{\sum_{i=1}^k Precision@i if i'th item is relevant to the user}{total num of relevant items}
 ```
 
 
