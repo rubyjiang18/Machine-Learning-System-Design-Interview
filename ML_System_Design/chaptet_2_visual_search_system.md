@@ -22,12 +22,15 @@ For images, resize, scale, normalization, consistent color mode...
 
 ### 3. Model Development
 3.1 Model selection: CNN and transformered based
+
 3.2 Model training: constrastive learning that train the model to distinguish similar and dissimilar images.
+
 3.3 Construct training dataset
 To label positive images:
 - Use human judgement: expensive and time consuming
 - Use user interaction (clicks) as a proxy for similarity: noisy and sparse training data
 - Artificially create a similar image from the query image, known as self-supervision: replys on data augmentation, such as SimCLR and MoCo, no manual work required, not noisy. Only drawback is that constructed training data differs from the real data.
+
 3.3 Choose the loss function to measure the quality of produced embedding
 Constrastive loss
 - Compute **similarity** between the query image and the embeddings of other images
