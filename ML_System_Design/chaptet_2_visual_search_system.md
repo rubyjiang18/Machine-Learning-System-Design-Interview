@@ -38,11 +38,10 @@ Constrastive loss
 ```math
 P(y=i|x) = \frac{e^{x_i}}{\sum_{j}e^{x_j}}
 ```
-
-
-
 - **Cross entropy** to measure how close the pred prob are to the ground truth
-
+```math
+L(y, \hat{y}) = -\sum_{i=1}^{N} y_i \log(\hat{y}_i)
+```
 
 
 ### Reference
