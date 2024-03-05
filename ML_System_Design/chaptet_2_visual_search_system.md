@@ -46,13 +46,31 @@ L(y, \hat{y}) = -\sum_{i=1}^{N} y_i \log(\hat{y}_i) = \sum_{i=1}^{N} y_i \log(\f
 ### 4. Evaluation
 4.1 Offline metrics - recommendation system
 - Mean Reciprocal Rank (MRR)
-It considers only the rank of the first relevant item in the output list
+
+It considers only the rank of the first relevant item in the output list, and does not measure the precision and ranking quality of a ranked list.
 ```math
 MRR = \frac{1}{m}\sum_{i=1}^{m}\frac{1}{ranki}
 ```
 - Recall@K
+
+```math
+recall@K = \frac{# of relevant items among the top k items in the output list}{total # of relevant items in the entire dataset}
+```
+
+Recall@K is not helpful when denominator is very high, where our goal is to retrieve a handful of the most similar images. It does measure the ranking quality of the model. Do not use.
 - Precision@K
+
+```math
+Precision@K = \frac{# of relevant items among the top k items in the output list}{k}
+```
+
+This metric measures how precise the output lists are, but it does not consider the ranking quality. Do not use.
 - Mean average precision (mAP)
+
+This metric first computes the AP for each output list, and then averages AP values.
+```math
+AP = \frac{\sum_{i=1}^k Precision@i if i'th item is relevant to the user}{total # of relevant items}
+```
 
 
 
