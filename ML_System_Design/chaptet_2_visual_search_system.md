@@ -25,12 +25,18 @@ For images, resize, scale, normalization, consistent color mode...
 3.2 Model training: constrastive learning that train the model to distinguish similar and dissimilar images.
 3.3 Construct training dataset
 To label positive images:
-- Use human judgement
-- Use user interaction (clicks) as a proxy for similarity
-- Artificially create a similar image from the query image, known as self-supervision
+- Use human judgement: expensive and time consuming
+- Use user interaction (clicks) as a proxy for similarity: noisy and sparse training data
+- Artificially create a similar image from the query image, known as self-supervision: replys on data augmentation, such as SimCLR and MoCo, no manual work required, not noisy. Only drawback is that constructed training data differs from the real data.
+3.3 Choose the loss function to measure the quality of produced embedding => Constrastive loss
+- Compute **similarity** between the query image and the embeddings of other images
+- Apply **softmax** to the computed distances => values sum up to 1
+\[ P(y=i|x) = \frac{e^{x_i}}{\sum_{j=1}^{K} e^{x_j}} \]
+- **Cross entropy** to measure how close the pred prob are to the ground truth
 
 
 
+### Reference
 - [x] [Visual search at pinterest](https://arxiv.org/pdf/1505.07647.pdf)
 - [x] [Unifying visual embeddings for search at Pinterest](https://medium.com/pinterest-engineering/unifying-visual-embeddings-for-visual-search-at-pinterest-74ea7ea103f0)
 - [x] [Representation learning](https://en.wikipedia.org/wiki/Feature_learning)
