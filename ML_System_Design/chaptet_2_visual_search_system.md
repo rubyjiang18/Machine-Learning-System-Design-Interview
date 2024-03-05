@@ -36,12 +36,9 @@ Constrastive loss
 - Compute **similarity** between the query image and the embeddings of other images
 - Apply **softmax** to the computed distances => values sum up to 1 
 ```math
-P(y=i|x) = \frac{e^{x_i}}{\sum_{j=1}^{K} e^{x_j}}
+P(y=i|x) = \frac{e^{x_i}}{\sum_{j}e^{x_j}}
 ```
 
-```math
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-```
 
 
 - **Cross entropy** to measure how close the pred prob are to the ground truth
