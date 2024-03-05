@@ -69,7 +69,7 @@ This metric measures how precise the output lists are, but it does not consider 
 
 This metric first computes the AP for each output list, and then averages AP values.
 ```math
-AP = \frac{\sum_{i=1}^k Precision@i \text{if i'th item is relevant to the user}}{\text{total num of relevant items}}
+AP = \frac{\sum_{i=1}^k \text{Precision@i if i'th item is relevant to the user}}{\text{total num of relevant items}}
 ```
 
 
