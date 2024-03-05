@@ -61,7 +61,7 @@ Recall@K is not helpful when denominator is very high, where our goal is to retr
 - Precision@K
 
 ```math
-Precision@K = \frac{num of relevant items among the top k items in the output list}{k}
+Precision@K = \frac{\text{num of relevant items among the top k items in the output list}}{k}
 ```
 
 This metric measures how precise the output lists are, but it does not consider the ranking quality. Do not use.
