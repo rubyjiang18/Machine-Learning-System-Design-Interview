@@ -28,7 +28,8 @@ To label positive images:
 - Use human judgement: expensive and time consuming
 - Use user interaction (clicks) as a proxy for similarity: noisy and sparse training data
 - Artificially create a similar image from the query image, known as self-supervision: replys on data augmentation, such as SimCLR and MoCo, no manual work required, not noisy. Only drawback is that constructed training data differs from the real data.
-3.3 Choose the loss function to measure the quality of produced embedding => Constrastive loss
+3.3 Choose the loss function to measure the quality of produced embedding
+Constrastive loss
 - Compute **similarity** between the query image and the embeddings of other images
 - Apply **softmax** to the computed distances => values sum up to 1
 \[ P(y=i|x) = \frac{e^{x_i}}{\sum_{j=1}^{K} e^{x_j}} \]
