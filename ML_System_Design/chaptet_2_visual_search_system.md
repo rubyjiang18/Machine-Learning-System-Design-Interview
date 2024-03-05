@@ -34,18 +34,13 @@ To label positive images:
 3.3 Choose the loss function to measure the quality of produced embedding
 Constrastive loss
 - Compute **similarity** between the query image and the embeddings of other images
-- Apply **softmax** to the computed distances => values sum up to 1
+- Apply **softmax** to the computed distances => values sum up to 1 $\sqrt{3x-1}+(1+x)^2$
 ```
 $$
 P(y=i|x) = \frac{e^{x_i}}{\sum_{j=1}^{K} e^{x_j}}
 $$
 ```
 
-```
-$$
-\displaystyle\sum_{k=3}^5 k^2=3^2 + 4^2 + 5^2 =50
-$$
-```
 
 
 - **Cross entropy** to measure how close the pred prob are to the ground truth
