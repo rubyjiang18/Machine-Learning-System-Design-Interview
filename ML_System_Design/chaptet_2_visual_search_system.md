@@ -43,6 +43,18 @@ P(y=i|x) = \frac{e^{x_i}}{\sum_{j}e^{x_j}}
 L(y, \hat{y}) = -\sum_{i=1}^{N} y_i \log(\hat{y}_i) = \sum_{i=1}^{N} y_i \log(\frac{1}{\hat{y}_i})
 ```
 
+### 4. Evaluation
+4.1 Offline metrics - recommendation system
+- Mean Reciprocal Rank (MRR)
+It considers only the rank of the first relevant item in the output list
+```math
+MRR = \frac{1}{m}\sum_{i=1}^{m}\frac{1}{ranki}
+```
+- Recall@K
+- Precision@K
+- Mean average precision (mAP)
+
+
 
 ### Reference
 - [x] [Visual search at pinterest](https://arxiv.org/pdf/1505.07647.pdf)
