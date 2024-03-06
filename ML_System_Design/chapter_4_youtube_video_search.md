@@ -4,11 +4,54 @@
 - A search system for videos
 - Input is text query only, output is a list of relevant videos
 - We use both the video's visual content and textual data
+- As opposed to recommendation system, no personalization is required
 - Given 10M <video, text query> pairs for training
 
+### 1. Frame as ML task
+1.1 Define the ML objective: retrieve and rank videos based on relevance to the text query
+1.2 Specify input and output
+1.3 Choose the right ML category
+Basically do text search and visual search seperately then fuse the results.
+- Visual search: rank based on similarity => Representation learning
+    - Two seperate encoders for text query and video
+    - Calc similarity score using two embed then rank
+- Text search: videos with the most similar titles, descriptions, or tags to the text query are shown as output
+    - Inverted index is a common tech for creating the text-based search component. 
+    - Not based on ML, no training cost
+    - Elasticsearch
 
+### 2. Data Preparation
+2.1 Data Engineering
+Not much engineering: Videl name/index | query | split type
+2.2 Feature Engineering
+- Prepare text data: 
+    - Text normalization or clean up (lowercase, remove punctutation, trim whitespaces, decompose combined graphemes into a combination of simple ones, strip accents, lemmatization and stemming)
+    - Tokenization: breaking text into smaller units/tokens (word, subword, character tokenization)
+    - Token to IDs: 
+        - lookup table: 1:1 mapping maps token to ID
+        - hashing (feature hashing or hashing trick): memory efficient method that use a hash function to obtain IDs, without keeping a lookup table. Still maps tokens to ID.
+        - pros and cons of these 2 methods
+- Prepare video data
+    - Decode frame => sample frames => resize => scaling/normalization/correct colors => frames.npy
 
-
+### 3. Model Development
+3.1 Model selection
+- Text encoder
+    - statistical methods
+        - BoW: convert a sentence into a fixed length vector, and models sentence-word occurance.
+            - Pros: Fast
+            - Cons: Does not consider order of words, does not capture semantic and contextual meaning of sentence, representation vector is sparse
+        - TF-IDF: reflect how important a word is to a document in a collection or corpus. It create the same sentence-word matrix as BoW, but normalize the matrix by the freq of words.
+        ```math
+        \text{tfidf(t, d, D)} = \text{tf{t, d}} * \text{idf{t, D}}
+        ```
+            - Pros: better than BoW as it gives less weights to freq words.
+            - Cons: an extra normalization step, no order of words, no semantic, spars
+    - ML based methods: solves the above issues.
+        - Embedding (lookup) layer: map each ID to an embed vector using loopup table. **This is a very effective and simple solution to convert sparse feature, such as IDs, to  a fixed-sized embed.**
+        - Word2Vec: shallow NN and use the co-occurences of words in a local context to learn word embed. CBOW and Skip-gram.
+        - Transformer-based architectures: considers the context of the words in a sentence when converting to embed. Diff from Word2Vec, it produces diff embed for the same word depending on the context. BERT, GPT, BLOOM.
+- Video encoder
 
 
 ### Reference
