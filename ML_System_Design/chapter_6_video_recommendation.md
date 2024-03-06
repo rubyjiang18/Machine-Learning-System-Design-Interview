@@ -54,8 +54,96 @@ We use
 
 ### 2. Data Preparation
 2.1 Data Engineering
+- Videos
+
+| Video ID | Length | Manual tags | Manual titles | Likes | Views | Language |
+
+- Users
+
+| User ID | Username | Age | Gender | City | Country | Email | Language | Time zone | 
+
+- User-video interactions
+
+| User ID | Video ID | Timestamp | Interaction type | Interaction value | Location |
 
 2.2 Feature Engineerinf
+
+- Video features
+    - video ID => embedding layer is learned during model trainig
+    - video length => people prefer videos of diff duration
+    - language => embedding layer
+    - title and tags => statistical or light-waight ML-based for tags, and BRRT for titles
+- User features
+    - user demographic
+    - user historical interactions
+        - search history: avg all prev search query embedding
+        - liked videos: video ID mao to embed vectors using the embed layer, then avg 
+        - watched videos and impression: same as liked videos
+    - contexual information: time of day, day of week, device
+
+### 3. Model Development
+3.1 and 3.2 Model selection and training
+
+- Matrix factorization
+    - Feedback matrix with combination of explicit feedback and implicit feedback
+    - MF decompose it into a user embedding and item embedding, such that distance represent relevance.
+    - training: random initialize 2 embed matrices, then iteratively optimize the embedding to decrease the loss the pred score matrix and feedback matrix. (SGD or WALS, short for weighted alternating least squares)
+    - Loss is a weighted comb of squared distance over observed <user, video> pair and unobserved pairs. Use weighted due to the matrix being sparse
+    ```math
+    L = \sum_{(i,j in obs)} (A_{ij} - U_i * V_j) ^ 2 + W \sum_{(i,j not in obs)} (A_{ij} - U_i * V_j) ^ 2
+    ```
+    - Inference: output a dot product for similarity measure
+    - As MF only use interaction data, not video features, it is commonly used in **collabortive filtering**.
+    - Pros:
+        - fast training speed
+        - fast service speed
+    - Cons:
+        - only reply on user-video interaction
+        - diff at handling new users
+
+- Two-tower Neural Network:
+    - A video encoder, a user encoder
+    - The dist between embeddings in the shared embed space represent their relevance
+    - Construct dataset: <user, video> pairs, construct positive and negative pairs (random video or disliked videos).
+    - Loss function: we frame it as a classification task, therefore, cross-enntropy loss
+    - Inference: Approximate NN to find the top k most similar/relevant videos embeddings efficiently.
+    - Good for both CF (when CF video encoder just embed video ID to a vector) and content-based. 
+    - Pros: user user features and can handle new users.
+    - Cons: slow serving, training expensive.
+
+### 4. Evaluation
+4.1 Offline metrics:
+- Precision@k
+- mAP
+- Diversity
+
+4.2 Online metrics:
+- CTR
+- num of completed videos
+- total watch time
+- explicit user feedback
+
+### 5. Serving
+In a two-stage design, a **lightweight model** to quickly narrow down (candidate gene, do not use video feature); then a havier model that accurately scores and rank (both user and video features); then rerank.
+
+- k candidate generation model using shallow two-tower NN for efficiency
+- score use deep two-tower NN for accuracy
+- reranking(region restricted, freshness, misinformation, duplicate, fairness and bias)
+
+Common challenges:
+- serving speed
+- precision
+- diversity (multiple candidate generator)
+- cold-start problem
+    - new users
+        - quick fill profiles
+        - calc an average user
+        
+    - new videos
+        - video metadata 
+        - no interaction: multi-arm bandit, display it to random user to collect interaction
+        - then fine-tune the NN using the new interaction
+
 
 
 ### Reference
