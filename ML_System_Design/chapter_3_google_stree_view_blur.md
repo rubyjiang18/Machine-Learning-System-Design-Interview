@@ -1,4 +1,42 @@
 ## Chapter 3: Google Stree View Blurring System
+### 0. Clarifying requirements
+- A street view blurring system that blurs license plates and human faces. 
+- We have a training dataset of 1M images with annotated faces and plates
+- Latency is not an issue
+- Business goal is to protect user privacy
+
+### 1. Frame as ML task
+- Define the ML objective: Protect user privacy by blurring plates and faces. So ML goal is to identify these "objects" accurately. 
+- Specify system's input (image) and output (location and class) 
+- Choose the right ML category
+    An object detection has 2 responsibilities:
+    - predict the location of each object => (x,y,w,h) regression problem
+    - predict the class of each bounding box
+    Two common object detection architectures
+    - Two stage networks (RCNN etc)
+        - Regional proposal network (RPN)
+        - Classifier      
+    - One stage network (YOLO, SSD)
+        make prediction wrt anchors or grid of possible obj centers
+Two-stage network is slower but more accurate, we only have 1 M data not huge by modern standards, so we use two-stage.
+
+### 2. Data Preparation
+2.1 Data engineering
+- Annotated dataset
+- Street View images
+
+2.2 Feature engineering
+Standard preprocessing (resize + normalization) + data augmentation (random crop, random saturation, flip, rotation, translation, affine transformation, changing brightness, saturation, and contrast)
+
+Offline augmentation: requires additional data storage, but fast
+Online augmentation: slow but no extra storage
+
+### 3. Model Development
+3.1 Model selection - Two stage network
+- Convolution layers => feature map
+- RPN
+
+
 
 
 - [x] [Google Street View](https://www.google.com/streetview/)
