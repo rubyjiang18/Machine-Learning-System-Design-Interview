@@ -38,12 +38,26 @@ Online augmentation: slow but no extra storage
 
 ### 3. Model Development
 3.1 Model selection - Two stage network
+
 - Convolution layers => feature map
-- RPN
+- RPN: takes in feature map, generate candidate regions.
+- Classifier: takes feature map + proposed candidate regions.
 
+3.2 Model training
 
+Forward propagation, loss calculation, backward propagation.
 
+- Regression loss for generating bounding boxes => MSE
+```math
+L_{reg} = \frac{1}{M}\sum_{i=1}^{M}[(x_i - \hat{x}_i)^2 + (y_i - \hat{y}_i)^2 + (w_i - \hat{w}_i)^2 + (h_i - \hat{h}_i)^2] 
+```
 
+- Classification loss => log loss = cross entropy loss
+```math
+L_{cls} = \frac{1}{M}\sum_{i=1}^{M}\sum_{c=1}^{C}y_c log \hat{y}_c
+```
+
+### Reference
 - [x] [Google Street View](https://www.google.com/streetview/)
 - [x] [DETR](https://github.com/facebookresearch/detr)
 - [x] [RCNN family](https://lilianweng.github.io/posts/2017-12-31-object-recognition-part-3/)
