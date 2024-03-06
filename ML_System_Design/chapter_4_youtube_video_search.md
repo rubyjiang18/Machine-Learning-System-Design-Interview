@@ -44,7 +44,7 @@ Not much engineering: Videl name/index | query | split type
         - TF-IDF: reflect how important a word is to a document in a collection or corpus. It create the same sentence-word matrix as BoW, but normalize the matrix by the freq of words.
 
         ```math
-        tfidf(t, d, D) = \text{tf{t, d}} * \text{idf{t, D}}
+        tfidf(t, d, D) = tf(t, d) * idf(t, D)
         ```
 
             - Pros: better than BoW as it gives less weights to freq words.
@@ -54,7 +54,51 @@ Not much engineering: Videl name/index | query | split type
         - Word2Vec: shallow NN and use the co-occurences of words in a local context to learn word embed. CBOW and Skip-gram.
         - Transformer-based architectures: considers the context of the words in a sentence when converting to embed. Diff from Word2Vec, it produces diff embed for the same word depending on the context. BERT, GPT, BLOOM.
 - Video encoder
+    - Video level models: process a whole video and create embed. Use 3d convolutions or Transformers. Comp Expensive.
+    - Frame level models
+        - preprocess a video and sample frames => Run model on sampled frames to create embed => Aggregate (avg) to generate video embed (ViT)
+        - Pros: Faster and comp less expensive.
+        - Cons: do no understand temporal aspect of the videos, such as actions or motions, but not as crucial.
 
+3.2 Model training: constrastive learning approach
+- For each input video, we create 1 positive text query, (n-1) negative text queries
+- Encode each video and n text queries
+- Compute similarity scores (S1 = Ev * E1, ..., Sn = Ev * En)
+- Softmax to sum to 1
+- Cross Entropy for loss
+
+### 4. Evaluation
+4.1 Offline metric
+- MRR
+- Recall@k
+- Precision@k and mAP
+- nDCG
+4.2 Online metric
+- CTR
+- Video completion rate
+- Total watch time of search results by week, month, year
+
+### 5. Serving
+5.1 Prediction pipeline
+- visual search => hundres of videos
+    - Use NN or ANN to find the most similar video embed to the text embed
+- textual search => hundres of videos
+    - Use elastic search to find videos with **titles or tags overlap with text query**
+- fusing layer => tens of videos
+    - one option is to jut re-rank based on weighted sum of their predicted relevance scores
+    - another is to adopt an additional model to re-rank the videos
+- re-ranking service => search results
+    - incorporating business-level logic and policies
+
+5.2 Indexing pipeline
+- Video indexing pipeline: encoder create embed for each video and then indexed for NN.
+- Text indexing pipeline: elasticsearch for indexing titles, tags, auto-tags.
+
+### 6. Other talking points
+6.1 Multi-stage design
+6.2 Use more video features, popularity, freshness
+6.3 Instead of using annotated dataset, use interactions - continual learning
+6.4 Use ML to find titles and tags which are semantically similar to query text
 
 ### Reference
 - [ ] [Elasticsearch](https://www.tutorialspoint.com/elasticsearch/elasticsearch_query_dsl.htm)
