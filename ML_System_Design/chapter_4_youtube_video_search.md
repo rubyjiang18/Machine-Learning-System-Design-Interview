@@ -42,9 +42,9 @@ Not much engineering: Videl name/index | query | split type
             - Pros: Fast
             - Cons: Does not consider order of words, does not capture semantic and contextual meaning of sentence, representation vector is sparse
         - TF-IDF: reflect how important a word is to a document in a collection or corpus. It create the same sentence-word matrix as BoW, but normalize the matrix by the freq of words.
-        
+
         ```math
-        \text{tfidf(t, d, D)} = \text{tf{t, d}} * \text{idf{t, D}}
+        tfidf(t, d, D) = \text{tf{t, d}} * \text{idf{t, D}}
         ```
 
             - Pros: better than BoW as it gives less weights to freq words.
