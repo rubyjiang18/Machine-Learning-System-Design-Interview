@@ -113,6 +113,10 @@ Business level logic and policies. Filter inapproriate results (private images, 
 5.2 Indexing pipeline
 - Indexing service: store the embed of the entire image in an index table.
 
+### 6. Follow up
+- How to use image metadata, such as tags, to improve search results. See chapter 3
+- How to support the ability to search images by a textual query. See chapter 4
+
 ### Reference
 - [x] [Visual search at pinterest](https://arxiv.org/pdf/1505.07647.pdf)
 - [x] [Unifying visual embeddings for search at Pinterest](https://medium.com/pinterest-engineering/unifying-visual-embeddings-for-visual-search-at-pinterest-74ea7ea103f0)
@@ -144,3 +148,4 @@ Business level logic and policies. Filter inapproriate results (private images, 
 - [ ] [Better search with gnns](https://arxiv.org/pdf/2010.01666.pdf)
 - [x] [Active learning](https://en.wikipedia.org/wiki/Active_learning_(machine_learning))
 - [ ] [Human-in-the-loop ML](https://arxiv.org/pdf/2108.00941.pdf)
+

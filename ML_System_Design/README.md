@@ -8,33 +8,6 @@ Another good MLSD resources can be found in this [repo](https://github.com/alire
 ## Chapter 2: Visual Search System
 
 ## Chapter 3: Google Stree View Blurring System
-- [x] [Google Street View](https://www.google.com/streetview/)
-- [x] [DETR](https://github.com/facebookresearch/detr)
-- [x] [RCNN family](https://lilianweng.github.io/posts/2017-12-31-object-recognition-part-3/)
-- [x] [Fast RCNN](https://arxiv.org/abs/1504.08083)
-- [x] [Faster RCNN](https://arxiv.org/abs/1506.01497)
-- [ ] [YOLO family](https://pyimagesearch.com/2022/04/04/introduction-to-the-yolo-family/)
-- [ ] [SSD](https://jonathan-hui.medium.com/ssd-object-detection-single-shot-multibox-detector-for-real-time-processing-9bd8deac0e06)
-- [x] [Data augmentation techiniques](https://www.kaggle.com/discussions/getting-started/190280)
-- [x] [CNN](https://en.wikipedia.org/wiki/Convolutional_neural_network)
-- [ ] [Object detection details](https://dudeperf3ct.github.io/object/detection/2019/01/07/Mystery-of-Object-Detection/)
-- [ ] [Forward pass and backward pass - Andrew Ng Youtube Video](https://www.youtube.com/watch?v=qzPQ8cEsVK8)
-- [x] [MSE](https://en.wikipedia.org/wiki/Mean_squared_error)
-- [x] [Log loss/cross entropy loss](https://en.wikipedia.org/wiki/Cross-entropy)
-- [x] [Pascal VOC](http://host.robots.ox.ac.uk/pascal/VOC/voc2008/index.html)
-- [x] [Coco dataset evaluation](https://cocodataset.org/#detection-eval)
-- [ ] [Object detection evaluation](https://github.com/rafaelpadilla/Object-Detection-Metrics)
-- [ ] [Non-maximum suppression (NMS)](https://en.wikipedia.org/wiki/NMS)
-- [x] [Python implementation of NMS](https://learnopencv.com/non-maximum-suppression-theory-and-implementation-in-pytorch/)
-- [x] [Recent object detection models](https://viso.ai/deep-learning/object-detection/)
-- [x] [Distributed training in TensorFlow](https://www.tensorflow.org/guide/distributed_training)
-- [x] [Distributed training in Pytorch](https://pytorch.org/tutorials/beginner/dist_overview.html)
-- [x] [GDPR and ML](https://www.oreilly.com/radar/how-will-the-gdpr-impact-machine-learning/)
-- [ ] [Bias and fairness in face detectin](http://sibgrapi.sid.inpe.br/col/sid.inpe.br/sibgrapi/2021/09.04.19.00/doc/103.pdf)
-- [x] [AI fairness](https://www.kaggle.com/code/alexisbcook/ai-fairness)
-- [x] [Continue learing](https://towardsdatascience.com/how-to-apply-continual-learning-to-your-machine-learning-models-4754adcd7f7f)
-- [x] [Active learning](https://en.wikipedia.org/wiki/Active_learning_(machine_learning))
-- [x] [Human-in-the-loop ML](https://arxiv.org/pdf/2108.00941.pdf)
 
 ## Chapter 4: Youtube Video Search
 - [ ] [Elasticsearch](https://www.tutorialspoint.com/elasticsearch/elasticsearch_query_dsl.htm)
