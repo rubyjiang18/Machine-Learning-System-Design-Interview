@@ -73,6 +73,7 @@ Not much engineering: Videl name/index | query | split type
 - Recall@k
 - Precision@k and mAP
 - nDCG
+
 4.2 Online metric
 - CTR
 - Video completion rate
