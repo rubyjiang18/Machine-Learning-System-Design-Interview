@@ -54,8 +54,44 @@ L_{reg} = \frac{1}{M}\sum_{i=1}^{M}[(x_i - \hat{x}_i)^2 + (y_i - \hat{y}_i)^2 + 
 
 - Classification loss => log loss = cross entropy loss
 ```math
-L_{cls} = \frac{1}{M}\sum_{i=1}^{M}\sum_{c=1}^{C}y_c log \hat{y}_c
+L_{cls} = \frac{1}{M}\sum_{i=1}^{M}\sum_{c=1}^{C}y_c log (\hat{y}_c)
 ```
+Eventually 
+```math
+L = L_{cls} + \lambda L_{reg} 
+```
+
+### 4. Evaluation
+When is the predicted bounding box considered correct? An IOU threshold is usually used.
+```math
+IOU = \frac{\text{Area of overlap}}{\text{Area of union}}
+```
+
+4.1 Offline metric
+- Precision
+```math
+Precision = \frac{\text{Num of correct predictions}}{\text{Total num of detection}}
+```
+Primary disadvantage is that precision varies  with different IOU thresholds.
+- Average precision (AP)
+```math
+AP = \int_0^1 P(r)dr
+```
+where P(r) is the precision at IOU threshold r.
+
+This can be approximated as 
+```math
+AP = \frac{1}{11}\sum_{n=0}^{n=10}P(n)
+```
+- Mean average precision (mAP)
+Average AP over all different class
+```math
+mAP = \frac{1}{C}\sum_{C=1}^{C}AP_c
+```
+
+4.1 Online metric
+
+
 
 ### Reference
 - [x] [Google Street View](https://www.google.com/streetview/)
