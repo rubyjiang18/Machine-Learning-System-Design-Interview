@@ -123,7 +123,7 @@ Not much engineering: Videl name/index | query | split type
 - [ ] [Multimodel language models](https://arxiv.org/abs/2107.00676)
 - [ ] [Near-duplicate video detection](https://arxiv.org/abs/2005.07356)
 - [ ] [Generalizable search relevence](https://livebook.manning.com/book/ai-powered-search/chapter-10/v-10/1)
-- [x] [Freshness in search and recommendation systems](https://developers.google.com/machine-learning/recommendation/dnn/re-ranking)
+- [x] [**Freshness in search and recommendation systems**](https://developers.google.com/machine-learning/recommendation/dnn/re-ranking)
 - [ ] [Semantic product search by Amazon](https://arxiv.org/pdf/1907.00937.pdf)
 - [ ] [Ranking relevance in Yahoo search](https://www.kdd.org/kdd2016/papers/files/adf0361-yinA.pdf)
 - [ ] [Semantic product search in E-Commerce](https://arxiv.org/abs/2008.08180)
