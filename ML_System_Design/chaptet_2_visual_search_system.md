@@ -82,8 +82,36 @@ DCG calcuates the cumulative gain of items in a list by summing up the relevance
 ```math
 DCG_p = \sum_{i=1}^{p} \frac{rel_i}{\log2(i+1)}
 ```
+where $rel_i$ is the ground truth rel score of the image ranked at locaiton i.
 
+nDCG is a normalized version of DCG as DCG can take any values, normalize it by the DCG of an ideal ranking list.
+```math
+nDCG_p = \frac{DCG_p}{IDCG_p}
+```
+Its primary shortcoming is that deriving the ground truth rel scores is not always possible. But in our case, in eval set, we use similarity score, we can use NDCG.
 
+4.2 Online metric
+- CTR
+```math
+CTR = \frac{\text{num of clicked images}}{\text{total num of suggested images}}
+```
+- Avg daily, weekly, monthly time spent on the suggested images.
+
+### 5. Serving - Prediction & Indexing
+5.1 Prediction pipeline
+- Embedding generation 
+- Nearest neighbor service 
+    - Exact nearest neighbor (linear search): search the entir index table. O(NxD)
+    - Approximate nearest neighbor: O(logN x D)
+        - Tree base ANN: iteratively adding new criterion to each node.
+        - Locality sensitive hasing (LSH) based ANN: These hash functions map points in close proximity to each other into the same bucket.
+        - Clustering based ANN: group points based on similarity.
+- Re-ranking service 
+ 
+Business level logic and policies. Filter inapproriate results (private images, near duplicates).
+
+5.2 Indexing pipeline
+- Indexing service: store the embed of the entire image in an index table.
 
 ### Reference
 - [x] [Visual search at pinterest](https://arxiv.org/pdf/1505.07647.pdf)
