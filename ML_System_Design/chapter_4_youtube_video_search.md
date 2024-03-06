@@ -22,8 +22,11 @@ Basically do text search and visual search seperately then fuse the results.
 
 ### 2. Data Preparation
 2.1 Data Engineering
+
 Not much engineering: Videl name/index | query | split type
+
 2.2 Feature Engineering
+
 - Prepare text data: 
     - Text normalization or clean up (lowercase, remove punctutation, trim whitespaces, decompose combined graphemes into a combination of simple ones, strip accents, lemmatization and stemming)
     - Tokenization: breaking text into smaller units/tokens (word, subword, character tokenization)

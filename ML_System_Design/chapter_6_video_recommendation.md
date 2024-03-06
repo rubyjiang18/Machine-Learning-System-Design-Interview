@@ -134,6 +134,7 @@ Common challenges:
 - serving speed
 - precision
 - diversity (multiple candidate generator)
+- fairness: Make separate models for underserved groups; Track metrics (for example, accuracy and absolute error) on each demographic to watch for biases.
 - cold-start problem
     - new users
         - quick fill profiles
