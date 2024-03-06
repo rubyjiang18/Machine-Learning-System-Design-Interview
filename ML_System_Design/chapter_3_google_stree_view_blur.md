@@ -90,7 +90,17 @@ mAP = \frac{1}{C}\sum_{C=1}^{C}AP_c
 ```
 
 4.1 Online metric
+- number of user reports and complaints
+- human annotatos to spot-check the percentage of incorrectly blurred images
+- measure bias and fairness is also important (faces of diff ages and races)
 
+
+### 4. Serving
+Common problems: overlapping bounding boxes. Solution: Non-maximum suppression (NMS), which keeps highly confident ones.
+
+ML system design
+- batch prediction pipeline
+- Data pipeline + hard negative mining
 
 
 ### Reference
