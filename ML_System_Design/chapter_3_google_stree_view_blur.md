@@ -95,7 +95,7 @@ mAP = \frac{1}{C}\sum_{C=1}^{C}AP_c
 - measure bias and fairness is also important (faces of diff ages and races)
 
 
-### 4. Serving
+### 5. Serving
 Common problems: overlapping bounding boxes. Solution: Non-maximum suppression (NMS), which keeps highly confident ones.
 
 ML system design
