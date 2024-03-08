@@ -64,3 +64,12 @@ Interaction Type can be "click" or "book", source can be "search feature" or "si
 ```math
 Loss = \sum_{(c,p) \in D_p} \log(\frac{1}{1+e^{-E_p*E_c}}) + \sum_{(c,n) \in D_n} \log(\frac{1}{1+e^{E_n*E_c}})
 ```
+
+3.5 Can we improve the loss function to learn better embed?
+- **Add the eventually booked listing as a global context**
+- **Add negative pairs from the same region/neighborhood to the training data**
+
+
+```math
+Loss = \sum_{(c,p) \in D_p} \log(\frac{1}{1+e^{-E_p*E_c}}) + \sum_{(c,n) \in D_n} \log(\frac{1}{1+e^{E_n*E_c}}) + \sum_{(c,b) \in D_{booked}} \log(\frac{1}{1+e^{-E_p*E_c}}) + \sum_{(c,n) \in D_{hard}} \log(\frac{1}{1+e^{E_n*E_c}})
+```
