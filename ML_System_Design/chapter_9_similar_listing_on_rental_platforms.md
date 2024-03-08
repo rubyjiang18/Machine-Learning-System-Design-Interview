@@ -62,7 +62,7 @@ Interaction Type can be "click" or "book", source can be "search feature" or "si
 - use cross-entropy as a standard classification loss
 
 ```math
-Loss = \sum_{(c,p) \in D_p} \log(\frac{1}{1+e^{-E_p*E_c}}) + \sum_{(c,n) \in D_n} \log(\frac{1}{1+e^{E_n*E_c}})
+argmax \sum_{(c,p) \in D_p} \log(\frac{1}{1+e^{-E_p*E_c}}) + \sum_{(c,n) \in D_n} \log(\frac{1}{1+e^{E_n*E_c}})
 ```
 
 3.5 Can we improve the loss function to learn better embed?
@@ -71,5 +71,58 @@ Loss = \sum_{(c,p) \in D_p} \log(\frac{1}{1+e^{-E_p*E_c}}) + \sum_{(c,n) \in D_n
 
 
 ```math
-Loss = \sum_{(c,p) \in D_p} \log(\frac{1}{1+e^{-E_p*E_c}}) + \sum_{(c,n) \in D_n} \log(\frac{1}{1+e^{E_n*E_c}}) + \sum_{(c,b) \in D_{booked}} \log(\frac{1}{1+e^{-E_p*E_c}}) + \sum_{(c,n) \in D_{hard}} \log(\frac{1}{1+e^{E_n*E_c}})
+argmax \sum_{(c,p) \in D_p} \log(\frac{1}{1+e^{-E_p*E_c}}) + \sum_{(c,n) \in D_n} \log(\frac{1}{1+e^{E_n*E_c}}) + \sum_{(c,b) \in D_{booked}} \log(\frac{1}{1+e^{-E_p*E_c}}) + \sum_{(c,n) \in D_{hard}} \log(\frac{1}{1+e^{E_n*E_c}})
 ```
+
+### 4. Evaluation
+To evaluate what embedding learns
+- To evaluate if geographical similarity is encoded we performed k-means clustering on learned embeddings.
+- Next, we evaluated average cosine similarities between listings of different types (Entire Home, Private Room, Shared Room) and price ranges and confirmed that cosine similarities between listings of same type and price ranges are much higher compared to similarities between listings of different type and price ranges. Therefore, we can conclude that those two listing characteristics are well 
+ 
+
+4.1 Offline metrics:
+
+Test how  good the new model is at prediciting the **eventually-booked listing**, based on the latest user click. We create a metric call **average rank of the eventually booked listing**.
+
+Steps:
+    - given a search session consiting of 
+    ```
+    L0 (first clicked listing) | L1, L2, L3, L4, L5, L6 (final booked)
+    ```
+    - use modelto get embedding
+    - re-rank the L1 to L6 based on similarity score with L0
+    - If L6 (final booked) was ranked high, it indicates a good model
+    - We average the rank of final booked listing across all sesscions in the val dataset to compute this metric
+
+
+4.2 Online metrics:
+- CTR = num clicked listings / num of recommended listings
+- Session book rate = num of session turned into booking / total num of sessions
+
+
+### 5. Serving
+5.1 Training pipeline
+
+5.2 Indexing pipeline
+
+5.3 Prediciton pipeline
+- embedding fetcher service
+    - if model seen listing, fetch embed from the index table
+    - if model not seen, use heuristics (To create embeddings for a new listing we find 3 geographically closest listings that do have embeddings, and are of same listing type and price range as the new listing, and calculate their mean vector.) to handle new listings; when collected enough interaction data, retrain model
+- nearnest neighbor service
+- re-rank: apply user filters and certain constrains
+
+
+### Reference
+- [x] [Instgram's Explore recommender system](https://ai.meta.com/blog/powered-by-ai-instagrams-explore-recommender-system/)
+    - Ig2vec treats account IDs that a user interacts with — e.g., a person likes media from an account — as a sequence of words in a sentence.
+    - to narrow down candidates, train a super-lightweight model that learns from and tries to approximate our main ranking models as much as possible (ranking distillation model)
+- [x] [Airbnb listing embedding in search ranking](https://medium.com/airbnb-engineering/listing-embeddings-for-similar-listing-recommendations-and-real-time-personalization-in-search-601172f7603e)
+- [ ] [Word2Vec]()
+- [ ] [Negative sampling technique](https://www.baeldung.com/cs/nlps-word2vec-negative-sampling)
+- [ ] [Positional bias](https://eugeneyan.com/writing/position-bias/)
+- [ ] [Random walk]()
+- [ ] [Random walk with restarts]()
+- [ ] [Seasonality in recommendation systems](https://sci-hub.ru/10.1109/bigdata47090.2019.9005954)
+
+
