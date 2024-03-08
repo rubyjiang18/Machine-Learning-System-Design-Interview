@@ -4,7 +4,7 @@
 - We have a training dataset of 1M images with annotated faces and plates
 - Latency is not an issue
 - Business goal is to protect user privacy
-
+add 
 ### 1. Frame as ML task
 - Define the ML objective: Protect user privacy by blurring plates and faces. So ML goal is to identify these "objects" accurately. 
 - Specify system's input (image) and output (location and class) 

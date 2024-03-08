@@ -26,17 +26,14 @@ We use pointwise as it is simpler. We take <user, event> and use binary classifi
 - Events
 
 | Event ID | Host user ID | Category/subcategory | Description | Price | Location | Data/Time |
-|..........|..........|..........|..........|..........|..........|..........|
 
 - Friendships
 
 | User Id 1 | UserID 2 | Timestamp|
-|..........|..........|..........|
 
 - User-event interaction
 
 | User ID | Event ID | Interaciton type | Interaction value| Location | Timestamp |
-|..........|..........|..........|..........|..........|..........|
 
 2.2 Feature Engineering
 
@@ -111,6 +108,6 @@ Choose loss: CEL
     - ranking: use the pred prob
 
 
-
+### Reference
 - [x] [Data leakage](https://machinelearningmastery.com/data-leakage-machine-learning/)
 - [x] [Online training frequency](https://huyenchip.com/2022/01/02/real-time-machine-learning-challenges-and-solutions.html#towards-continual-learning)
