@@ -24,6 +24,78 @@
 - Pointwise Learning to Rank (LTR) to rank posts by engagement scores (between a user and a post)
 - A binary classifier to predict the prob of various reactions for a <user, post> pair
 
+```math
+\text{Engagement score} = \sum_{reaction \in reactions} p_{\text{reaction}} * w_{\text{reaction}} 
+```
+
+### 2. Data Preparation
+2.1 Data Engineering
+- Users
+- Posts
+
+| Post ID | Author ID | Texual content | hashtags | mentions | image or videos | timestamp | 
+
+- User-post interactions
+- **Friendship**
+
+| User ID 1 | User ID 2 | Time when friendshio was formed | Close friend | Family memebr | 
+
+2.2 Feature Engineering
+- post features
+    - textual content - BERT
+    - image or video - ResNet, CLIP, SimCLR
+    - reactions
+        - num of likes, comments, share, use bucketing and normalization
+    - hashtags
+        - tokenize (Viterbi), token to IDs (feature hashing), vectorization (TFIDF, word2Vec)
+    - post's age (bucket + one-hot)
+- user features 
+    - demographic: age, gender, country
+    - contextual: device, time of day
+    - **user-post historical interactions**: a list id post IDs that this user engaged with => extract features from these posts then average
+    - **being mentioned in the post**
+- **user-author affinities**
+    - This is among the most important features in predicting a user's engagement on FB!
+    - Like/click/comment rate
+    - Length of friendship
+    - close friends and family
+
+### 3. Model Development
+3.1 Model selection 
+- N independent DNNs for each reaction
+    - expensive to train
+    - for less freq reactions, not enough data
+- Multi-task DNNs
+    - check chapter 5 harmful content detection
+    - learn similarities between tasks and reduce computation
+- Improve model for passive users by adding prediciton head for
+    - dwell-time: time user spends on a post
+    - skip: a user spends less than t seconds (0.5s)
+
+3.2 Model training
+- construct pos/neg dataset for each reaction type
+- loss function, BCL for classification, MAE, MSE, Huber loss for regression
+
+### 4. Evaluation
+4.1 Offline metrics:
+- Precision, recall, F1, ROC-AUC
+
+4.2 Online metrics:
+- CTR
+- Reaction rate
+- Total time spend on news feed per day/week/month
+- User satisfication rate from user survey
+
+### 5. Service
+5.1 Data preparation pipeline
+- compute batch and online features
+- continuously generate training data from new posts and interactions
+
+5.3 prediction pipeline
+- retrieval service: effectively retrieve unseen posts
+- ranking service
+- re-rank (demotion misinfo and creepy and user filter), diversify
+
 
 
 ### Reference
