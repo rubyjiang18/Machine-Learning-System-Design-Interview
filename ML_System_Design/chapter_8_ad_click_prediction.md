@@ -141,3 +141,4 @@ NCE > 1 indicates the model is not performing better than simple baseline.
 - [ ] [Modal calibration](https://machinelearningmastery.com/calibrated-classification-model-in-scikit-learn/)
 - [ ] [Field-aware Factorization Machines](https://www.csie.ntu.edu.tw/~cjlin/papers/ffm.pdf)
 - [ ] [catastrophic forgetting in continual learning](https://www.cs.uic.edu/~liub/lifelong-learning/continual-learning.pdf)
+
