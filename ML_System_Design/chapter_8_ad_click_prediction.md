@@ -15,8 +15,15 @@
 
 ### 1. Frame as ML task
 1.1 Define the ML objective: maximize revenue by predicting if an ad will be clicked
+
 1.2 Specify input and output: user => a ranked list of ads based on click prob
-1.3 Choose the right ML category: pointwise LTR with <user, ad> pairs.
+
+1.3 Choose the right ML category:
+
+- Unlike most recommendation system that relys on historical user-item interaction, similar listing is not impacted by prev interactions that much, i.e., we do not use pointwise LTR with <user, ad> pairs.
+- We use a **session based recommendation system**, that recently viewed listings are more informative.
+- User's interests are context-dependent and evolve
+- **Learn item embedding using co-occurrences of items in user's browsing histories.**
 
 ### 2. Data Preparation
 2.1 Data Engineering

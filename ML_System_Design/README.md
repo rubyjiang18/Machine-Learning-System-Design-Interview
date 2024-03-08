@@ -16,27 +16,8 @@ Another good MLSD resources can be found in this [repo](https://github.com/alire
 ## Chapter 6: Video Recommendation System
 
 ## Chapter 7: Event Recommendation System
-- [x] [Data leakage](https://machinelearningmastery.com/data-leakage-machine-learning/)
-- [x] [Online training frequency](https://huyenchip.com/2022/01/02/real-time-machine-learning-challenges-and-solutions.html#towards-continual-learning)
 
 ## Chapter 8: Ad Click Prediction on Social Platforms
-- [ ] [Addressing delayed feedback](https://arxiv.org/pdf/1907.06558.pdf)
-- [ ] [AdTech basics](https://advertising.amazon.com/library/guides/what-is-adtech)
-- [x] [SimCLR: A Simple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/abs/2002.05709)
-- [x] [Feature crossing](https://developers.google.com/machine-learning/crash-course/feature-crosses/video-lecture#:~:text=Build%20an%20understanding%20of%20feature%20crosses.,1%20Implement%20feature%20crosses%20in%20TensorFlow.)
-- [x] [Feature Generation with Gradient Boosted Decision Trees](https://towardsdatascience.com/feature-generation-with-gradient-boosted-decision-trees-21d4946d6ab5)
-- [ ] DCN paper
-- [ ] DCN V2 paper
-- [ ] Microsoft's deep crossing entwork paper
-- [ ] Factorization Machines
-- [ ] Deep Factorization Machines
-- [x] [Kaggle's winning solution in ad click prediction](https://www.youtube.com/watch?v=4Go5crRVyuU)
-- [x] [Data leakage](https://machinelearningmastery.com/data-leakage-machine-learning/)
-- [x] [Time-based dataset splitting](https://www.linkedin.com/pulse/time-based-splitting-determining-train-test-data-come-manraj-chalokia/)
-- [ ] [Modal calibration](https://machinelearningmastery.com/calibrated-classification-model-in-scikit-learn/)
-- [ ] [Field-aware Factorization Machines](https://www.csie.ntu.edu.tw/~cjlin/papers/ffm.pdf)
-- [ ] [catastrophic forgetting in continual learning](https://www.cs.uic.edu/~liub/lifelong-learning/continual-learning.pdf)
-
 
 ## Chapter 9: Similar Listings on Vacation Rental Platforms
 
