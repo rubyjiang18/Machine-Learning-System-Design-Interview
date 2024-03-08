@@ -41,7 +41,83 @@
         - total impression/click on ads supplied by an advertiser
         - total impression/click of the campaign
 
+- User feature
+    - demographic: age, gender, city, country
+    - contexutal: device, time of day
+    - interaction-related features
+        - clicked ads: convert ID to embedding then average
+        - historical engagement statistics
+            - total ad views
+            - ad click rate
 
+Challenges: a lot of ID => sparse features
+
+
+### 3. Model Development
+3.1 Model selection
+- Logistic regression
+- LR + feature crossing
+- Gradient boosting decision trees
+- GBDT + LR
+- NN (single NN and two-tower)
+- Deep & Cross networks (find feature interactions automatically)
+- Factorization Machines 
+    - automatically models all pairwise feature interactions by learning an embedding vector for each feature. The interaction between two features is determined by the dot product of their embedding.
+    ```math
+    \hat{y} = w_o + \sum_i w_i x_i + \sum_i \sum_j <v_i, v_j> x_i x_j
+    ```
+    where xi is the ith feature, vi is the embedding of the ith feature, <> represents dot product.
+
+    - basically a LR + low-level pairwise interactions
+    - cons: FM cannot learn sophisticated higher-order interactios from features, unlike NN
+
+- Deep FM
+    - combine NN and FM
+
+3.2 Model training
+- construct dataset
+    - positive labels: user clicks the ad in less than t seconds after the ad is shown
+    - negative labels: user does not click the ad in less thent second. t is a hyperp can be tuned.
+- CE loss
+
+### 4. Evaluation
+4.1 Offline metrics:
+- CE
+
+```math
+H(p,\hat{p}) = - \sum_{c=1}^{c} p_c log(\hat{p}_c)
+```
+
+- Normalized CE
+
+```math
+NCE = \frac{\text{CE of ML model}}{\text{CE of the background CTR(average CTR in training data)}}
+```
+
+NCE > 1 indicates the model is not performing better than simple baseline.
+
+ 
+4.2 Online metrics:
+- CTR
+- conversion rate
+- revenue lift
+- hide rate
+
+### 5. Service
+5.1 Data preparation pipeline
+- compute batch and online features
+- continuously generate training data from new ads and interactions
+
+5.2 Continual learning
+
+5.3 prediction pipeline
+- candidate generation: ad targeting criteria often provided by advertiser, such as target age, gender, and country.
+- ranking model to rank candidates
+- re-rank
+
+
+
+### Reference
 - [ ] [Addressing delayed feedback](https://arxiv.org/pdf/1907.06558.pdf)
 - [ ] [AdTech basics](https://advertising.amazon.com/library/guides/what-is-adtech)
 - [x] [SimCLR: A Simple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/abs/2002.05709)
